@@ -24,10 +24,11 @@ jobs:
           ls -la
           ls -la fumin-hongyun-widget-0.1.0
 
+          rm -rf fumin-hongyun-widget-0.1.0/.github
           shopt -s dotglob
           mv fumin-hongyun-widget-0.1.0/* .
           rmdir fumin-hongyun-widget-0.1.0
-
+ 
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
